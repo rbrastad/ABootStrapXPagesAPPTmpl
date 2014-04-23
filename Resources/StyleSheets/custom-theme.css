@@ -1,0 +1,22 @@
+body {
+  padding-top: 70px;
+  padding-bottom: 30px;
+  font: 13px/1.7em "Open Sans", "trebuchet ms", arial, sans-serif;
+  
+}
+
+.theme-dropdown .dropdown-menu {
+  position: static;
+  display: block;
+  margin-bottom: 20px;
+}
+
+.theme-showcase > p > .btn {
+  margin: 5px 0;
+}
+
+
+@media (max-width: 767px)
+.table-responsive {
+	border: 0px solid #fff;
+}

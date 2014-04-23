@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='utf-8'?>
+<note class='view' xmlns='http://www.lotus.com/dxl' version='9.0' replicaid='C1257CC2007207E0'>
+<noteinfo noteid='4b2' unid='B6C5B19DC09C3F4AC1257CC1006698DA' sequence='3'>
+<created><datetime dst='true'>20140421T204038,02+02</datetime></created>
+<modified><datetime dst='true'>20140422T224535,87+02</datetime></modified>
+<revised><datetime dst='true'>20140421T204049,78+02</datetime></revised>
+<lastaccessed><datetime dst='true'>20140423T094834,78+02</datetime></lastaccessed>
+<addedtofile><datetime dst='true'>20140422T224535,87+02</datetime></addedtofile></noteinfo>
+<updatedby><name>CN=Runar Brastad/O=rbrastad</name></updatedby>
+<wassignedby><name>CN=Runar Brastad/O=rbrastad</name></wassignedby>
+<item name='$FormulaClass' sign='true'><text>1</text></item>
+<item name='$Index' sign='true'><text/></item>
+<item name='$Formula' summary='true' sign='true'><formula compiled='true'>
+igACABAABAB1bmlkkABWAQMABQBQAEsABwAJAAgADAALAAQACQAEAGZpcnN0bmFtZWxhc3RuYW1l
+ZW1haWxhZGRyZXNzY29tcGFueW5hbWV1bmlkJENvbmZsaWN0JFJFRgAEAAQAAAAaAAUABABGb3Jt
+AQAGAHBlcnNvbgoCAwAHAAoABAAJTDFT
+</formula></item>
+<item name='$Collation' summary='true'>
+<rawitemdata type='2'>
+BgAAAABE
+</rawitemdata></item>
+<item name='$ViewFormat' summary='true' sign='true'>
+<rawitemdata type='5'>
+AQAGAAcACAAAAFZDAAACAAEACgAKAFAAAQAACgAAAAAAAAAAAAICAAAAVkMAAAkACQAAAAAAUAAB
+AAAKAAAAAAAAAAAAAgIAAABWQwAACAAIAAAAAABQAAEAAAoAAAAAAAAAAAACAgAAAFZDAAAMAAwA
+AAAAAJUAAQAACgAAAAAAAAAAAAICAAAAVkMAAAsABwAAAAAAtgABAAAKAAAAAAAAAAAAAgIAAABW
+QwAABAAEAB4AAACtAQEAAAoAAAAAAAAAAAACAgAAACQwIwoAAAAIAJIAAwABBQEABAB/QTD/Zmly
+c3RuYW1lZmlyc3RuYW1lbGFzdG5hbWVsYXN0bmFtZWVtYWlsYWRkcmVzc2VtYWlsYWRkcmVzc2Nv
+bXBhbnluYW1lY29tcGFueXVuaWR1bmlkHgACABAABAB1bmlkkABWAQMABwAMAAUACTBTMEUAJgAB
+AAAAAQEACQEAAAoBAQ4KAAABAK0rAQABAAEAAAAAAAAAAABXQwEBAAkAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAD//wAAAAAAAAAAAAAAAAAAV0MBAQAJAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAA//8A
+AAAAAAAAAAAAAAAAAFdDAQEACQAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAP//AAAAAAAAAAAAAAAA
+AABXQwEBAAkAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAD//wAAAAAAAAAAAAAAAAAAV0MBAQAJAAAA
+AAAAAAAAAAAAAAAAAAAABAAAAAAA//8AAAAAAAAAAAAAAAAAAFdDAQEACQAAAAAAAAAAAAAAAAAA
+AAAAAAQAAAAAAP//AAAAAAAAAAAAAAAAAABCAAAAAAABAP///wAFAP///wABAAAAAAAAAAAAAAAA
+AAEA////AAEA////AAAAAQAAAAAAAQAAAAAAAQAAAAAAAAAIAAAAAAABAA==
+</rawitemdata></item>
+<item name='$Comment' sign='true'><text/></item>
+<item name='$Flags'><text>PY</text></item>
+<item name='$WebFlags' sign='true'><text>A</text></item>
+<item name='$TITLE' sign='true'><text>personas.all.view</text></item>
+<item name='$DesignerVersion' sign='true'><text>8.5.3</text></item></note>
+
