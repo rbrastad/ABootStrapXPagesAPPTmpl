@@ -5,6 +5,11 @@ body {
   
 }
 
+#datatablePersonasDirectory tbody tr:hover {
+	cursor: pointer;
+}
+
+
  .form-group .parsley-errors-list {
 	position: relative;
 	display: inline-block !important;

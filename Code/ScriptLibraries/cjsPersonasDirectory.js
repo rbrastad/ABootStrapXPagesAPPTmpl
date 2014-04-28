@@ -95,7 +95,8 @@ var PersonasDirectory = {
 		$("#unid").val(data.unid);
 		
 		$("#createBtn").html("update");
-		 
+	
+		$("#newPersonBtn").hide();
 		$("#deletePersonBtn").show();
 		$("#newPersonContainerWell").toggle();
 	},
