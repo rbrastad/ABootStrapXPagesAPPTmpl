@@ -6,6 +6,10 @@
 			src="/jquery/plugins/DataTables%201.10.0-beta.2/media/js/jquery.dataTables.min.js"
 			clientSide="true">
 		</xp:script>
+		<xp:script
+			src="/jquery/plugins/parsley/parsley.min.js"
+			clientSide="true">
+		</xp:script>
 		<xp:styleSheet href="/jquery/plugins/DataTables%201.10.0-beta.2/media/css/dataTables.bootstrap.css"></xp:styleSheet>
 	</xp:this.resources>
 	<div id="content-header">
@@ -26,42 +30,50 @@
 		<!--		New person well-->
 		<div class="well" id="newPersonContainerWell"
 			style="display:none">
-			<form id="frmPerson" class="form parsley-form">
+			<form id="frmPerson" class="form">
 				<input class="form-control" type="hidden" name="unid"
 					id="unid" />
 				<input class="form-control" type="hidden" name="action"
 					id="action" />
 
 				<div class="row">
-					<div class="col-sm-12">
-						<h3>Person details</h3>
+					<div class="form-group"> 
+						<div class="col-sm-12">
+							<h3>Person details</h3>
+						</div>
+						<div class="col-sm-12">
+							<label>Firstname:</label>
+							<input class="form-control" type="text"
+								placeholder="firstname" name="firstname" id="firstname" data-parsley-required="true" />
+						</div>
 					</div>
-					<div class="col-sm-12">
-						<label>Firstname:</label>
-						<input class="form-control" type="text"
-							placeholder="firstname" name="firstname" id="firstname" />
+					<div class="form-group"> 
+						<div class="col-sm-12">
+							<label>Lastname:</label>
+							<input class="form-control" data-parsley-required="true"  
+								type="text" placeholder="lastname" id="lastname" name="lastname" />
+						</div>
 					</div>
-					<div class="col-sm-12">
-						<label>Lastname:</label>
-						<input class="form-control" data-required="true"
-							type="text" placeholder="lastname" id="lastname" name="lastname" />
-					</div>
-					<div class="col-sm-12">
-						<label>Email:</label>
-						<div class="form-group">
-							<div class="input-group">
-								<span class="input-group-addon">@</span>
-								<input class="form-control"
-									data-required="true" type="text" placeholder="emailaddress"
-									id="emailaddress" name="emailaddress" />
+					<div class="form-group"> 
+						<div class="col-sm-12">
+							<label>Email:</label>
+							<div class="form-group">
+								<div class="input-group">
+									<span class="input-group-addon">@</span>
+									<input class="form-control" data-parsley-type="email"
+										data-parsley-required="true"  type="email" placeholder="emailaddress"
+										id="emailaddress" name="emailaddress" />
+								</div>
 							</div>
 						</div>
 					</div>
-					<div class="col-sm-12">
+					<div class="form-group"> 	
+						<div class="col-sm-12">
 						<label>Companyname:</label>
-						<input class="form-control" data-required="true"
+						<input class="form-control" data-parsley-required="true" 
 							type="text" placeholder="companyname" id="companyname"
 							name="companyname" />
+						</div>
 					</div>
 				</div>
 				<div class="row" style="margin-top:20px">

@@ -61,7 +61,9 @@ public class PersonServlet extends JsonHttpServlet {
 			
 			returnJSON = getResponseJson("created",true,"Person created");		
 		} catch (NotesException e1) {
-			returnJSON = getResponseJson("created",false,e1.getMessage());		
+			returnJSON = getResponseJson("created",false,e1.getMessage());	
+			res.setStatus(HttpServletResponse.SC_BAD_REQUEST);
+			
 		}		
 
 		doResponseWriteJson(returnJSON);

@@ -5,9 +5,9 @@ var PersonasDirectory = {
 	msgSavedError : "An error saving.",
 	msgDeleteError : "An error deleting a person.",
 	msgDeleteSuccess : "Person deleted.",
+	validator : null,
 	
 	init : function(){
-	
 		$( "#newPersonBtn" ).click(function() {
 			$("#newPersonContainerWell").toggle();
 			$("#deletePersonBtn").hide();
@@ -24,7 +24,10 @@ var PersonasDirectory = {
 		
 		$( "#createBtn" ).click(function() {
 			$("#action").val("");
-			PersonasDirectory.savePerson("POST", PersonasDirectory.msgSavedSuccess, PersonasDirectory.msgSavedSuccess);
+		
+			isValidated = PersonasDirectory.formValidate();
+			if(isValidated) 
+				PersonasDirectory.savePerson("POST", PersonasDirectory.msgSavedSuccess, PersonasDirectory.msgSavedSuccess);
 		});
 		
 		$( "#deletePersonBtn" ).click(function() {
@@ -32,8 +35,7 @@ var PersonasDirectory = {
 			PersonasDirectory.deletePerson($("#unid").val() ,PersonasDirectory.msgDeleteSuccess, PersonasDirectory.msgDeleteError);
 		});
 		
-		this.getPersonas();
-		
+		this.getPersonas();		
 	},
 	deletePerson : function(unid, successMsg , errorMsg ){
 		$.ajax({
@@ -122,5 +124,24 @@ var PersonasDirectory = {
 	               }
             }
 	    });
+	},
+	formValidate : function() {
+		validator = PersonasDirectory.validator;
+		
+		if(validator == null){
+			validator = $('#frmPerson').parsley();
+//			A validator field success helper method that hides the text box completely
+			validator.subscribe('parsley:field:success', function (data) {
+			   $("#parsley-id-" + data.__id__).removeClass("parsley-errors-list");
+			   return;
+			  });
+//			A validator field success helper method that adds the parsley-errors-list class on field error.			
+			validator.subscribe('parsley:field:error', function (data) {
+				$("#parsley-id-" + data.__id__).addClass("parsley-errors-list");
+			    return;
+			  });
+		}
+		
+		return validator.validate();
 	}
 }
