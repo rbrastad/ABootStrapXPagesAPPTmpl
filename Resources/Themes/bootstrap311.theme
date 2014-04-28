@@ -24,7 +24,12 @@
 		<content-type>text/css</content-type>
 		<href>bootstrap-3.1.1-dist/css/bootstrap-theme.min.css</href>
 	</resource>	
-		
+	
+	<resource  rendered="#{javascript:view.getPageName() == '/page.xsp'}">
+		<content-type>text/css</content-type>
+		<href>custom-theme.css</href>
+	</resource>	
+	
 	<resource  rendered="#{javascript:view.getPageName() == '/page.xsp'}">
 		<content-type>application/x-javascript</content-type>
 		<href>jquery/js/jquery-1.11.0.min.js</href>

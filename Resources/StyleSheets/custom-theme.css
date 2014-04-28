@@ -5,6 +5,26 @@ body {
   
 }
 
+ .form-group .parsley-errors-list {
+	position: relative;
+	display: inline-block !important;
+	padding: 2px 10px;
+	margin: 0;
+	margin-top:3px;
+	list-style: none;
+	color: #fff;
+	font-size: 12px;
+	font-weight: 600;
+	background: #b94a48;
+	-webkit-border-radius: 4px;
+	-webkit-background-clip: padding-box;
+	-moz-border-radius: 4px;
+	-moz-background-clip: padding;
+	border-radius: 4px;
+	background-clip: padding-box;
+}
+
+
 .theme-dropdown .dropdown-menu {
   position: static;
   display: block;
@@ -14,6 +34,7 @@ body {
 .theme-showcase > p > .btn {
   margin: 5px 0;
 }
+
 
 
 @media (max-width: 767px)
