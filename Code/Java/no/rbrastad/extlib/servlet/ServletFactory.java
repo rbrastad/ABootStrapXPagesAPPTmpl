@@ -1,5 +1,7 @@
 package no.rbrastad.extlib.servlet;
 
+import java.util.HashMap;
+
 import javax.servlet.Servlet;
 import javax.servlet.ServletException;
 
@@ -12,34 +14,68 @@ import com.ibm.designer.runtime.domino.adapter.ComponentModule;
 import com.ibm.designer.runtime.domino.adapter.IServletFactory;
 import com.ibm.designer.runtime.domino.adapter.ServletMatch;
 
-public class ServletFactory implements IServletFactory { 
+   public class ServletFactory implements IServletFactory { 
 
-   private ComponentModule module; 
+	   private HashMap<String, Class> servletMap = null;
+	   private ComponentModule module; 
 
-   public void init (ComponentModule module) { 
-       this.module = module; 
-   } 
-
-   public ServletMatch getServletMatch (String contextPath, String path) 
-       throws ServletException { 
-    
-       String servletPath = ""; 
-       path = path.replace("/xsp/service", "");
-       
-       if (path.equals ("/whoami"))  
-           return new ServletMatch ( getWidgetServlet(WhoAmIServlet.class) , servletPath, path); 
-       else if (path.equals ("/person"))  
-           return new ServletMatch ( getWidgetServlet(PersonServlet.class) , servletPath, path); 
-       else
-           return new ServletMatch (getWidgetServlet( UnknownPathServlet.class ), servletPath, path); 
-     } 
-
-   public Servlet getWidgetServlet(Class clazz ) throws ServletException { 
-	   String SERVLET_WIDGET_CLASS = clazz.getName();
-	   String SERVLET_WIDGET_NAME =  clazz.getSimpleName();
+	   public void init (ComponentModule module) { 
+	       this.module = module; 
+	       this.servletMap = new HashMap<String, Class>();
+	       
+	       mapServlets();
+	   } 
 	   
-	   return module.createServlet (SERVLET_WIDGET_CLASS, SERVLET_WIDGET_NAME, null);
-   	} 
-  
+	   /**
+	    * Servlets map setup path = servlet class
+	    */
+	   private void mapServlets(){
+		   servletMap.put("/whoami", WhoAmIServlet.class);
+		   servletMap.put("/person", PersonServlet.class);  
+	   }
+
+	   public ServletMatch getServletMatch (String contextPath, String path) 
+	       throws ServletException { 
+	       try { 
+	         //  throw new Exception (); 
+	       } 
+	       catch (Throwable t) { 
+	          // t.printStackTrace (); 
+	       }  
+	     
+	       String servletPath = ""; 
+	       path = path.replace("/xsp/service", "");
+	     
+	       return new ServletMatch (  getServletByPath(path), servletPath, path); 
+	       }
+	   
+	   
+	   private Servlet getServletByPath(String path) throws ServletException{
+		   Class servletClass = servletMap.get( path );
+//		   if not found we assume a wildcard servlet so we do extensive search for servlet
+		   if(servletClass == null){
+			   for(String key : servletMap.keySet()){
+//				   TODO: rewrite to something more elegant and handle deep path wildcards
+				   if(key.endsWith("*")){
+					   String keyTmp = key.replace("*", "");
+					   if( path.startsWith(keyTmp) ){
+						   servletClass = servletMap.get(key);
+						   break;
+					   }
+				   }   
+			   }
+		   }
+		   
+		   if(servletClass != null)
+			   return getWidgetServlet(servletClass);
+		   else
+			   throw new ServletException("Servlet path not found.");
+	   }
+	      
+	   
+	   public Servlet getWidgetServlet (Class servletClazz) throws ServletException { 
+		     return module.createServlet (servletClazz.getName(), servletClazz.getSimpleName(), null);
+		} 
+   
 
 }

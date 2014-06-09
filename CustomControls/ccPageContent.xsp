@@ -13,8 +13,7 @@
 				<!-- Add all custom controls that act as page content here so we can choose the correct one from url path -->
 				<xc:ccPersonasDirectory xp:key="personas-directory"></xc:ccPersonasDirectory>
 				<xc:ccExampleBootStrapUI xp:key="bootstrap-example"></xc:ccExampleBootStrapUI>
-
-				<xc:ccAbout xp:key="about"></xc:ccAbout></xp:this.facets>
+		    </xp:this.facets>
 		</xe:switchFacet>
 	</div>
 
