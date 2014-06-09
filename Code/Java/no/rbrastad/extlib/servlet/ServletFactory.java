@@ -5,9 +5,8 @@ import java.util.HashMap;
 import javax.servlet.Servlet;
 import javax.servlet.ServletException;
 
-import no.rbrastad.extlib.servlet.services.PersonServlet;
-import no.rbrastad.extlib.servlet.services.UnknownPathServlet;
-import no.rbrastad.extlib.servlet.services.WhoAmIServlet;
+import no.rbrastad.personas.PersonServlet;
+import no.rbrastad.whoami.WhoAmIServlet;
 
 
 import com.ibm.designer.runtime.domino.adapter.ComponentModule;

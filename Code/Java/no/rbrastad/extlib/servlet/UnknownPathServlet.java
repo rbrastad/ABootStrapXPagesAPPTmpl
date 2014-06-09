@@ -1,4 +1,4 @@
-package no.rbrastad.extlib.servlet.services;
+package no.rbrastad.extlib.servlet;
 
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -8,14 +8,11 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import lotus.domino.NotesException;
-
 import com.ibm.commons.util.io.json.JsonGenerator;
 import com.ibm.commons.util.io.json.JsonJavaFactory;
 import com.ibm.commons.util.io.json.JsonJavaObject;
-import com.ibm.xsp.extlib.util.ExtLibUtil;
 
-public class WhoAmIServlet extends HttpServlet {
+public class UnknownPathServlet extends HttpServlet {
 
 	private static final long serialVersionUID = 1L;	
 	
@@ -28,13 +25,9 @@ public class WhoAmIServlet extends HttpServlet {
 		res.setHeader("Cache-Control", "no-cache");
 				
 		JsonJavaObject returnJSON = new JsonJavaObject();
-		try {
-			returnJSON.put("status", true );		
-			returnJSON.put("username", ExtLibUtil.getCurrentSession().getEffectiveUserName()  );
-		} catch (NotesException e) {
-			returnJSON.put("status", false );
-			returnJSON.put("message", e.getMessage() );
-		}
+		returnJSON.put("status", false );		
+		returnJSON.put("message","Unknown path: " + req.getPathInfo() );
+		returnJSON.put("path", req.getPathInfo() );
 		
 		PrintWriter out = res.getWriter (); 
 		out.print( jsonToString(returnJSON) );			

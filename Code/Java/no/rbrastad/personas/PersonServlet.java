@@ -1,4 +1,4 @@
-package no.rbrastad.extlib.servlet.services;
+package no.rbrastad.personas;
 
 import java.io.IOException;
 import java.io.PrintWriter;
