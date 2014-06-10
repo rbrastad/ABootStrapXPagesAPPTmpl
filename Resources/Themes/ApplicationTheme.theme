@@ -27,13 +27,22 @@
 	
 	<resource  rendered="#{javascript:view.getPageName() == '/page.xsp'}">
 		<content-type>text/css</content-type>
-		<href>custom-theme.css</href>
+		<href>apptheme/css/apptheme.css</href>
+	</resource>	
+	<resource  rendered="#{javascript:view.getPageName() == '/page.xsp'}">
+		<content-type>text/css</content-type>
+		<href>apptheme/css/apptheme-nav.css</href>
+	</resource>	
+	<resource  rendered="#{javascript:view.getPageName() == '/page.xsp'}">
+		<content-type>text/css</content-type>
+		<href>apptheme/css/apptheme-media.css</href>
 	</resource>	
 	
 	<resource  rendered="#{javascript:view.getPageName() == '/page.xsp'}">
 		<content-type>application/x-javascript</content-type>
 		<href>jquery/js/jquery-1.11.0.min.js</href>
 	</resource>
+	
 	<resource  rendered="#{javascript:view.getPageName() == '/page.xsp'}">
 		<content-type>application/x-javascript</content-type>
 		<href>bootstrap-3.1.1-dist/js/bootstrap.min.js</href>
