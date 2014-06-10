@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='utf-8'?>
 <note default='true' class='icon' xmlns='http://www.lotus.com/dxl' version='9.0'
  replicaid='C1257CC2007207E0'>
-<noteinfo noteid='11e' unid='FFF4383E2F4E6EC9C1257CC100588921' sequence='21'>
+<noteinfo noteid='11e' unid='FFF4383E2F4E6EC9C1257CC100588921' sequence='24'>
 <created><datetime dst='true'>20140421T180702,73+02</datetime></created>
-<modified><datetime dst='true'>20140609T161248,51+02</datetime></modified>
-<revised><datetime dst='true'>20140609T161248,50+02</datetime></revised>
-<lastaccessed><datetime dst='true'>20140609T161248,51+02</datetime></lastaccessed>
+<modified><datetime dst='true'>20140610T181955,95+02</datetime></modified>
+<revised><datetime dst='true'>20140610T181955,94+02</datetime></revised>
+<lastaccessed><datetime dst='true'>20140610T181955,95+02</datetime></lastaccessed>
 <addedtofile><datetime dst='true'>20140422T224531,29+02</datetime></addedtofile></noteinfo>
 <updatedby><name>CN=Runar Brastad/O=rbrastad</name></updatedby>
 <item name='IconBitmap' summary='true'>
@@ -25,10 +25,10 @@ AAAAUEECICABAAD/////+A4DgA==
 </rawitemdata></item>
 <item name='$Daos'><text>0</text></item>
 <item name='$DefaultXPage'><text>page.xsp</text></item>
-<item name='$TITLE'><text>A BootStrap XPages Vanilla Application Theme Template
-</text></item>
 <item name='$Flags'><text>J!</text></item>
 <item name='$LaunchXPageRunOnServer'><text>0</text></item>
 <item name='$FlagsNoRefresh'><text>rv</text></item>
-<item name='$AllowRESTDbAPI'><number>2</number></item></note>
+<item name='$AllowRESTDbAPI'><number>2</number></item>
+<item name='$TITLE'><text>BS Application Template for XPages
+</text></item></note>
 
