@@ -18,7 +18,7 @@
           <a href="javascript:;" data-toggle="collapse" data-target=".navbar-collapse" id="top-bar-toggle" class="navbar-toggle">
 			<i class="fa fa-cog"></i>
 		  </a>
-          <a class="navbar-brand" href="#">Application Theme</a>
+          <a class="navbar-brand" href="#">Application Theme for XPages</a>
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav">

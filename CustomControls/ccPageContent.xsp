@@ -7,7 +7,7 @@
 	</xp:this.resources>
    <div class="container" role="main">
    		<div class="col-md-2">
-   			<xc:ccPageMainMenu></xc:ccPageMainMenu>
+   			<xc:ccPageMainLeft></xc:ccPageMainLeft>
    		</div>
 		<div class="col-md-10">
 			<xe:switchFacet id="sf" defaultFacet="error" 
