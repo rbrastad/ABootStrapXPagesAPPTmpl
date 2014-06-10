@@ -10,13 +10,13 @@
    			<xc:ccPageMainLeft></xc:ccPageMainLeft>
    		</div>
 		<div class="col-md-10">
-			<xe:switchFacet id="sf" defaultFacet="error" 
+			<xe:switchFacet id="sf" defaultFacet="index" 
 				selectedFacet="#{javascript:PageRenderer.renderContentFacet();}">
 				<xp:this.facets>
 					<!-- Add all custom controls that act as page content here so we can choose the correct one from url path -->
 					<xc:ccPersonasDirectory xp:key="personas-directory"></xc:ccPersonasDirectory>
 					<xc:ccExampleBootStrapUI xp:key="bootstrap-example"></xc:ccExampleBootStrapUI>
-			    </xp:this.facets>
+					<xc:ccIndex xp:key="index"></xc:ccIndex></xp:this.facets>
 			</xe:switchFacet>
 		</div>
 	</div>

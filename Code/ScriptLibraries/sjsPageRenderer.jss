@@ -14,6 +14,10 @@ var PageRenderer = {
 			if(uri.substring(0,1) == "/")
 				uri = uri.substring(1);
 						
+			if( uri == "" ){
+				exCon.redirect(path + "/page.xsp/index");
+			}
+				
 			return uri;
 		}catch(exception){
 			return "error";
