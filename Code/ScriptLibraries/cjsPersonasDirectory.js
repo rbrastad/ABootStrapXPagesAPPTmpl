@@ -1,6 +1,7 @@
 var PersonasDirectory = {	
 	dataTablePersonasDirectoryId : "#datatablePersonasDirectory",
 	urlPersonasDirectory : "../api/data/collections/name/personas.all.view",
+	urlPersonasPersonSave: "../xsp/service/person",
 	msgSavedSuccess : "Saved person.",
 	msgSavedError : "An error saving.",
 	msgDeleteError : "An error deleting a person.",
@@ -39,7 +40,7 @@ var PersonasDirectory = {
 	},
 	deletePerson : function(unid, successMsg , errorMsg ){
 		$.ajax({
-		    url: "../xsp/service/person?" + unid,
+		    url: PersonasDirectory.urlPersonasPersonSave + "?" + unid,
 		    method: "DELETE"
 		}).success(function (response) {
 			PersonasDirectory.notifyAlert("alert-success","Success", successMsg );
@@ -55,7 +56,7 @@ var PersonasDirectory = {
 	},
 	savePerson : function( httpMethod, successMsg , errorMsg ){
 		$.ajax({
-		    url: "../xsp/service/person",
+		    url: PersonasDirectory.urlPersonasPersonSave,
 		    method: httpMethod,
 		    data: $("#frmPerson").serialize()
 		}).success(function (response) {

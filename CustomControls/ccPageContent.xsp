@@ -6,10 +6,10 @@
 		<xp:script src="/sjsPageRenderer.jss" clientSide="false"></xp:script>
 	</xp:this.resources>
    <div class="container" role="main">
-   		<div class="col-md-2">
+   		<div class="col-md-2 sidebar">
    			<xc:ccPageMainLeft></xc:ccPageMainLeft>
    		</div>
-		<div class="col-md-10">
+		<div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
 			<xe:switchFacet id="sf" defaultFacet="index" 
 				selectedFacet="#{javascript:PageRenderer.renderContentFacet();}">
 				<xp:this.facets>
@@ -17,7 +17,7 @@
 					<xc:ccPersonasDirectory xp:key="personas-directory"></xc:ccPersonasDirectory>
 					<xc:ccExampleBootStrapUI xp:key="bootstrap-example"></xc:ccExampleBootStrapUI>
 					<xc:ccIndex xp:key="index"></xc:ccIndex></xp:this.facets>
-			</xe:switchFacet>
+			</xe:switchFacet> 
 		</div>
 	</div>
 

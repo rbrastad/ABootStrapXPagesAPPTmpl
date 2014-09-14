@@ -1,23 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?><note class="form" replicaid="C1257CC2007207E0" version="9.0" xmlns="http://www.lotus.com/dxl">
-<noteinfo noteid="1466" sequence="19" unid="AACF790593079B15C1257CF30058E743">
+<noteinfo noteid="1466" sequence="49" unid="AACF790593079B15C1257CF30058E743">
 <created><datetime dst="true">20140610T181103,71+02</datetime></created>
-<modified><datetime dst="true">20140610T181534,54+02</datetime></modified>
-<revised><datetime dst="true">20140610T181534,53+02</datetime></revised>
-<lastaccessed><datetime dst="true">20140610T181534,54+02</datetime></lastaccessed>
+<modified><datetime dst="true">20140914T212057,16+02</datetime></modified>
+<revised><datetime dst="true">20140914T212057,15+02</datetime></revised>
+<lastaccessed><datetime dst="true">20140914T212057,16+02</datetime></lastaccessed>
 <addedtofile><datetime dst="true">20140610T181103,72+02</datetime></addedtofile></noteinfo>
 <updatedby><name>CN=Runar Brastad/O=rbrastad</name></updatedby>
 <wassignedby><name>CN=Runar Brastad/O=rbrastad</name></wassignedby>
 <item name="$Flags"><text>gC~4;</text></item>
 
 
-<item name="$FileNames" sign="true"><text>ccNavigationMain.xsp</text></item>
-
-
 <item name="$TITLE" sign="true"><text>ccPageNavigationMain.xsp</text></item>
+
+
+
 <item name="$DesignerVersion"><text>9.0.0</text></item>
 
 
 
 
-
-</note>
+<item name="$FileNames" sign="true"><text>ccPageNavigationMain.xsp</text></item></note>

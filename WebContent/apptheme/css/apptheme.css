@@ -1,8 +1,6 @@
 body {
   padding-top: 70px;
   padding-bottom: 30px;
-  font: 13px/1.7em "Open Sans", "trebuchet ms", arial, sans-serif;
-  
 }
 
 
@@ -18,7 +16,7 @@ body {
 
 /* Not required for template or sticky footer method. */
 body > .container {
-  padding: 60px 15px 0;
+  padding: 30px 15px 0;
 }
 .container .text-muted {
   margin: 20px 0;
@@ -29,12 +27,8 @@ body > .container {
   padding-left: 15px;
 }
 
-code {
-  font-size: 80%;
-}
 
-
-
+/* CSS DataTable   */
 #datatablePersonasDirectory tbody tr:hover {
 	cursor: pointer;
 }
@@ -61,16 +55,6 @@ code {
 	background-clip: padding-box;
 }
 
-
-.theme-dropdown .dropdown-menu {
-  position: static;
-  display: block;
-  margin-bottom: 20px;
-}
-
-.theme-showcase > p > .btn {
-  margin: 5px 0;
-}
 
 
 
