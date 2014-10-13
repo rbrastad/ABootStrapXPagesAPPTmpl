@@ -4,6 +4,21 @@ body {
 }
 
 
+.sidebar {
+	position: fixed;
+	top: 51px;
+	bottom: 0;
+	left: 0;
+	z-index: 1000;
+	display: block;
+	padding: 20px;
+	overflow-x: hidden;
+	overflow-y: auto;
+	background-color: #f5f5f5;
+	border-right: 1px solid #eee;
+}
+
+
 /* Sticky footer CSS */
 #footer {
   position: absolute;
@@ -12,6 +27,7 @@ body {
   /* Set the fixed height of the footer here */
   height: 60px;
   background-color: #f5f5f5;
+  z-index: 1000;
 }
 
 /* Not required for template or sticky footer method. */

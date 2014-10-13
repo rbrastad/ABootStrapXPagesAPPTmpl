@@ -5,6 +5,8 @@ import java.util.HashMap;
 import javax.servlet.Servlet;
 import javax.servlet.ServletException;
 
+import no.rbrastad.extlib.servlet.fileupload.AttachmentServlet;
+import no.rbrastad.personas.CompanyServlet;
 import no.rbrastad.personas.PersonServlet;
 import no.rbrastad.whoami.WhoAmIServlet;
 
@@ -24,13 +26,15 @@ import com.ibm.designer.runtime.domino.adapter.ServletMatch;
 	       
 	       mapServlets();
 	   } 
-	   
+	    
 	   /**
 	    * Servlets map setup path = servlet class
 	    */
 	   private void mapServlets(){
 		   servletMap.put("/whoami", WhoAmIServlet.class);
 		   servletMap.put("/person", PersonServlet.class);  
+		   servletMap.put("/company", CompanyServlet.class);  
+		   servletMap.put("/attachment", AttachmentServlet.class); 
 	   }
 
 	   public ServletMatch getServletMatch (String contextPath, String path) 

@@ -16,7 +16,9 @@
 					<!-- Add all custom controls that act as page content here so we can choose the correct one from url path -->
 					<xc:ccPersonasDirectory xp:key="personas-directory"></xc:ccPersonasDirectory>
 					<xc:ccExampleBootStrapUI xp:key="bootstrap-example"></xc:ccExampleBootStrapUI>
-					<xc:ccIndex xp:key="index"></xc:ccIndex></xp:this.facets>
+					<xc:ccIndex xp:key="index"></xc:ccIndex>
+				</xp:this.facets>
+					
 			</xe:switchFacet> 
 		</div>
 	</div>

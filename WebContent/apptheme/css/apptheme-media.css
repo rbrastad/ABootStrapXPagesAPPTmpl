@@ -11,5 +11,16 @@
 		margin-top: 5px;
 		margin-bottom: 5px;
 	}
+	
+	#personImageShow{
+		max-width:400px;
+	}
 }
 
+
+
+@media all and (max-width: 767px) {
+	.sidebar{
+		display: none;
+	}
+}

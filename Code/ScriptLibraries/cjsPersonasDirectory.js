@@ -2,18 +2,22 @@ var PersonasDirectory = {
 	dataTablePersonasDirectoryId : "#datatablePersonasDirectory",
 	urlPersonasDirectory : "../api/data/collections/name/personas.all.view",
 	urlPersonasPersonSave: "../xsp/service/person",
+	urlPersonasPersonImage : "../xsp/service/attachment?unid=",
 	msgSavedSuccess : "Saved person.",
 	msgSavedError : "An error saving.",
 	msgDeleteError : "An error deleting a person.",
 	msgDeleteSuccess : "Person deleted.",
 	validator : null,
+	imageUploaderAdded : false,
 	
 	init : function(){
+		$("#personImageShow").hide();
+	
 		$( "#newPersonBtn" ).click(function() {
 			$("#newPersonContainerWell").toggle();
 			$("#deletePersonBtn").hide();
 			$("#newPersonBtn").hide();
-			
+			$("#personImageContainer").hide();
 			$("#unid").val("");	
 		});
 		
@@ -45,9 +49,11 @@ var PersonasDirectory = {
 		}).success(function (response) {
 			PersonasDirectory.notifyAlert("alert-success","Success", successMsg );
 			
-			$("#newPersonContainerWell").toggle();
-			
+			$("#newPersonContainerWell").toggle();	
 			$("#createBtn").html("create");
+			
+			$("#newPersonBtn").show();
+			$("#deletePersonBtn").hide();
 				
 			PersonasDirectory.getPersonas();
 		}).fail(function () {
@@ -60,6 +66,8 @@ var PersonasDirectory = {
 		    method: httpMethod,
 		    data: $("#frmPerson").serialize()
 		}).success(function (response) {
+			
+			console.log(response);
 			PersonasDirectory.notifyAlert("alert-success","Success", successMsg);
 		    
 			$("#newPersonContainerWell").toggle();
@@ -99,7 +107,32 @@ var PersonasDirectory = {
 	
 		$("#newPersonBtn").hide();
 		$("#deletePersonBtn").show();
-		$("#newPersonContainerWell").toggle();
+		$("#newPersonContainerWell").show();
+	
+		if(data.imageFileName != null){
+			$("#personImageShow").attr("src", PersonasDirectory.urlPersonasPersonImage + data.unid +"&file=" +  data.imageFileName );
+			$("#personImageShow").show();
+			$("#personAvatar").hide();
+		}
+		
+//		A quick and dirty example to set a url with the unid of the document
+		if( !PersonasDirectory.imageUploaderAdded ){
+			$("#personImage").uploadFile({
+				url: PersonasDirectory.urlPersonasPersonImage + data.unid,
+				onSuccess : function(response){
+					console.log(response);
+					PersonasDirectory.getPersonas();
+				}
+			});
+			PersonasDirectory.imageUploaderAdded = true;
+		}else{
+			$("#personImage").update({url: PersonasDirectory.urlPersonasPersonImage + data.unid});
+		}
+			
+			
+		$(".ajax-upload-dragdrop").removeAttr("style");
+		
+		$("#personImageContainer").show();	
 	},
 	notifyAlert : function (alertClass, textStrong,text){
 		$("#notify-alert").removeClass("alert-success");

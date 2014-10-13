@@ -55,6 +55,15 @@ public class JsonHttpServlet extends HttpServlet{
 		return returnJSON;
 	}
 	
+	public JsonJavaObject getResponseJson(String action, boolean status,String message,String unid) {
+		JsonJavaObject returnJSON = new JsonJavaObject();
+		returnJSON.put("action", action );		
+		returnJSON.put("status", Boolean.toString(status) );		
+		returnJSON.put("message", message );
+		returnJSON.put("unid", unid );
+		
+		return returnJSON;
+	}
 	
 
 	private String jsonToString(JsonJavaObject returnJSON ){
