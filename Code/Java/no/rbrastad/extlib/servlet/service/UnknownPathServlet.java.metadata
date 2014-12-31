@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><note class="form" replicaid="C1257CC2007207E0" version="9.0" xmlns="http://www.lotus.com/dxl">
+<noteinfo noteid="1ab6" sequence="5" unid="B5D11F5E6FEDB3D9C1257DBF0001C2D8">
+<created><datetime>20141231T011914,16+01</datetime></created>
+<modified><datetime>20141231T011914,74+01</datetime></modified>
+<revised><datetime>20141231T011914,73+01</datetime></revised>
+<lastaccessed><datetime>20141231T011914,74+01</datetime></lastaccessed>
+<addedtofile><datetime>20141231T011914,17+01</datetime></addedtofile></noteinfo>
+<updatedby><name>CN=Runar Brastad/O=rbrastad</name></updatedby>
+<wassignedby><name>CN=Runar Brastad/O=rbrastad</name></wassignedby>
+<item name="$Flags"><text>34567Cg~[</text></item>
+<item name="$TITLE"><text>no/rbrastad/extlib/servlet/service/UnknownPathServlet.java</text></item>
+<item name="$DesignerVersion"><text>8.5.3</text></item>
+
+
+<item name="$FileNames" sign="true"><text>no/rbrastad/extlib/servlet/service/UnknownPathServlet.java</text></item>
+
+
+</note>

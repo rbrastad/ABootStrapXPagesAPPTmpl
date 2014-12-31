@@ -8,7 +8,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import no.rbrastad.extlib.servlet.JsonHttpServlet;
+import no.rbrastad.extlib.servlet.service.JsonHttpServlet;
 
 import lotus.domino.Document;
 import lotus.domino.NotesException;

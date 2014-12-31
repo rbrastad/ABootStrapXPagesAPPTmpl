@@ -162,7 +162,6 @@ var PersonasDirectory = {
 	},
 	formValidate : function() {
 		validator = PersonasDirectory.validator;
-		
 		if(validator == null){
 			validator = $('#frmPerson').parsley();
 //			A validator field success helper method that hides the text box completely
