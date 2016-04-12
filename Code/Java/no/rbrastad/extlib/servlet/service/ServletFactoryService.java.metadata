@@ -1,18 +1,18 @@
-<?xml version="1.0" encoding="UTF-8"?><note class="form" replicaid="C1257CC2007207E0" version="9.0" xmlns="http://www.lotus.com/dxl">
-<noteinfo noteid="1aae" sequence="9" unid="EB510C7F2E5FE89FC1257DBF0001BEF0">
-<created><datetime>20141231T011904,16+01</datetime></created>
-<modified><datetime>20141231T012218,54+01</datetime></modified>
-<revised><datetime>20141231T012218,53+01</datetime></revised>
-<lastaccessed><datetime>20141231T012218,54+01</datetime></lastaccessed>
-<addedtofile><datetime>20141231T011904,17+01</datetime></addedtofile></noteinfo>
-<updatedby><name>CN=Runar Brastad/O=rbrastad</name></updatedby>
-<wassignedby><name>CN=Runar Brastad/O=rbrastad</name></wassignedby>
+<?xml version="1.0" encoding="UTF-8"?><note class="form" maintenanceversion="1.0" replicaid="C1257F93003162A9" version="9.0" xmlns="http://www.lotus.com/dxl">
+<noteinfo noteid="1ee" sequence="5" unid="4819B53B98CFC6B1C1257F7A004373F2">
+<created><datetime>20160318T131645,94+01</datetime></created>
+<modified><datetime dst="true">20160412T105939,37+02</datetime></modified>
+<revised><datetime dst="true">20160411T142730,55+02</datetime></revised>
+<lastaccessed><datetime dst="true">20160412T105939,37+02</datetime></lastaccessed>
+<addedtofile><datetime dst="true">20160412T105939,37+02</datetime></addedtofile></noteinfo>
+<updatedby><name>CN=Runar Brastad/O=TINE</name></updatedby>
+<wassignedby><name>CN=Runar Brastad/O=TINE</name></wassignedby>
 <item name="$Flags"><text>34567Cg~[</text></item>
 <item name="$TITLE"><text>no/rbrastad/extlib/servlet/service/ServletFactoryService.java</text></item>
-
 <item name="$DesignerVersion"><text>8.5.3</text></item>
 
 
 <item name="$FileNames" sign="true"><text>no/rbrastad/extlib/servlet/service/ServletFactoryService.java</text></item>
+
 
 </note>

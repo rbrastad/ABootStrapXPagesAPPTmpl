@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<xp:view xmlns:xp="http://www.ibm.com/xsp/core" rendered="false"
-	afterRenderResponse="#{javascript: new no.rbrastad.xsp.xrest.XRestFactory().doService()}">
-	This page is an xrest page 
-</xp:view>

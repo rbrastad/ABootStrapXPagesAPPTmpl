@@ -7,6 +7,7 @@ import java.util.List;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
+
 import org.apache.commons.fileupload.FileItem;
 import org.apache.commons.fileupload.FileUploadException;
 import org.apache.commons.fileupload.disk.DiskFileItemFactory;
@@ -37,7 +38,13 @@ public class MultipartRequestHandler {
  
                     // 2.5 if FileItem is not of type "file"
                     if (item.isFormField()) {
- 
+                    	  temp = new FileMeta();
+                    	  temp.setFieldName(item.getFieldName());
+                    	  temp.setFieldValue(item.getString());
+                    	  
+                          // 2.7 Add created FileMeta object to List<FileMeta> files
+                          files.add(temp);	
+                    	
                     } else {
  
                         // 2.7 Create FileMeta object

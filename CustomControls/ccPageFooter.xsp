@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<xp:view xmlns:xp="http://www.ibm.com/xsp/core">
-	<div id="footer">
-      <div class="container">
-        <p class="text-muted">@rbrastad - sticky footer example at bottom of page</p>
-      </div>
-    </div>
-</xp:view>

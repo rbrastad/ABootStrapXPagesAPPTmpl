@@ -1,0 +1,72 @@
+{
+    "swagger": "2.0",
+    "info": {
+        "title": "Solidum Proxy API",
+        "description": "Solidum Henvendelser Proxy Pass API løsning for å sende inn Henvendelser til Solidum fra DMZ",
+        "version": "1.0.0"
+    },
+    "host": "ds10036.tine.no",
+    "schemes": [
+        "http"
+    ],
+    "basePath": "/drift/api/solidumproxyapi.nsf/xsp/api",
+    "produces": [
+        "application/json"
+    ],
+    "paths": {
+        "/henvendelse": {
+            "post": {
+                "summary": "Innsending av henvendelser til Solidum.",
+                "description": "Dette APIet kan brukes til å sende inn henvendelser til Solidum. Under finner du feltene som er predefinerte av løsningen. Videre sender man inn form parametere som blir lagret av Solidum.",
+                "tags": [
+                    "solidum",
+                    "henvendelser"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "in": "query",
+                        "name": "token",
+                        "description": "Accesstoken",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "in": "query",
+                        "name": "redirectSuccess",
+                        "description": "Komplett url som det skal sendes videre til ved suksess",
+                        "required": false,
+                        "type": "string"
+                    },
+                    {
+                        "in": "query",
+                        "name": "redirectError",
+                        "description": "Komplett url som det skal sendes videre til ved feil",
+                        "required": false,
+                        "type": "string"
+                    },
+                    {
+                        "in": "formData",
+                        "name": "fid",
+                        "description": "SkjemaID som brukes for denne skjematypen.",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Redirects eller sender en respons av typen JSON. Kan være ren tekst"
+                    },
+                    "401": {
+                        "description": "Autentisering er feil. Mangler accessToken."
+                    },
+                    "default": {
+                        "description": "blank"
+                    }
+                }
+            }
+        }
+    }
+}

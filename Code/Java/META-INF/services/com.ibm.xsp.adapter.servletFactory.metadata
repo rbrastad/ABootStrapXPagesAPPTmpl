@@ -1,15 +1,15 @@
-<?xml version="1.0" encoding="UTF-8"?><note class="form" replicaid="C1257CC2007207E0" version="9.0" xmlns="http://www.lotus.com/dxl">
-<noteinfo noteid="4d2" sequence="3" unid="6A6E056BBF15315DC1257CC1006BC7BF">
-<created><datetime dst="true">20140421T213714,87+02</datetime></created>
-<modified><datetime dst="true">20140422T224536,03+02</datetime></modified>
-<revised><datetime dst="true">20140421T213910,51+02</datetime></revised>
-<lastaccessed><datetime dst="true">20140422T224536,03+02</datetime></lastaccessed>
-<addedtofile><datetime dst="true">20140422T224536,03+02</datetime></addedtofile></noteinfo>
-<updatedby><name>CN=Runar Brastad/O=rbrastad</name></updatedby>
-<wassignedby><name>CN=Runar Brastad/O=rbrastad</name></wassignedby>
+<?xml version="1.0" encoding="UTF-8"?><note class="form" maintenanceversion="1.0" replicaid="C1257F93003162A9" version="9.0" xmlns="http://www.lotus.com/dxl">
+<noteinfo noteid="15e" sequence="5" unid="B0A71F95FAE28162C1257F73004298EF">
+<created><datetime>20160311T130725,27+01</datetime></created>
+<modified><datetime dst="true">20160412T105929,86+02</datetime></modified>
+<revised><datetime dst="true">20160411T142729,96+02</datetime></revised>
+<lastaccessed><datetime dst="true">20160412T105929,86+02</datetime></lastaccessed>
+<addedtofile><datetime dst="true">20160412T105929,86+02</datetime></addedtofile></noteinfo>
+<updatedby><name>CN=Runar Brastad/O=TINE</name><name>CN=DSWeb01/O=TINE</name><name>CN=Runar Brastad/O=TINE</name></updatedby>
+<wassignedby><name>CN=Runar Brastad/O=TINE</name></wassignedby>
 <item name="$Flags"><text>34567Cg~[</text></item>
 <item name="$TITLE"><text>META-INF/services/com.ibm.xsp.adapter.servletFactory</text></item>
-<item name="$DesignerVersion"><text>8.5.3</text></item>
+<item name="$DesignerVersion" sign="true"><text>8.5.3</text></item>
 
 
 <item name="$FileNames" sign="true"><text>META-INF/services/com.ibm.xsp.adapter.servletFactory</text></item></note>

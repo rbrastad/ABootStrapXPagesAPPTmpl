@@ -1,14 +1,15 @@
 <?xml version='1.0' encoding='utf-8'?>
 <note default='true' class='icon' xmlns='http://www.lotus.com/dxl' version='9.0'
- replicaid='C1257CC2007207E0'>
-<noteinfo noteid='11e' unid='FFF4383E2F4E6EC9C1257CC100588921' sequence='24'>
-<created><datetime dst='true'>20140421T180702,73+02</datetime></created>
-<modified><datetime dst='true'>20140610T181955,95+02</datetime></modified>
-<revised><datetime dst='true'>20140610T181955,94+02</datetime></revised>
-<lastaccessed><datetime dst='true'>20140610T181955,95+02</datetime></lastaccessed>
-<addedtofile><datetime dst='true'>20140422T224531,29+02</datetime></addedtofile></noteinfo>
-<updatedby><name>CN=Runar Brastad/O=rbrastad</name></updatedby>
-<item name='IconBitmap' summary='true'>
+ maintenanceversion='1.0' replicaid='C1257F93003162A9'>
+<noteinfo noteid='11e' unid='97FD5CF768227771C1257F7300428FC2' sequence='19'>
+<created><datetime>20160311T130701,78+01</datetime></created>
+<modified><datetime dst='true'>20160412T110026,30+02</datetime></modified>
+<revised><datetime dst='true'>20160412T110026,29+02</datetime></revised>
+<lastaccessed><datetime dst='true'>20160412T110026,30+02</datetime></lastaccessed>
+<addedtofile><datetime dst='true'>20160412T105926,14+02</datetime></addedtofile></noteinfo>
+<updatedby><name>CN=Runar Brastad/O=TINE</name><name>CN=DSWeb01/O=TINE</name><name
+>CN=Runar Brastad/O=TINE</name></updatedby>
+<item name='IconBitmap' summary='true' sign='true'>
 <rawitemdata type='6'>
 AiAgAQAA///////wD///4Af//8AD//4AAH/8AAA/+AAAH/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAA
 D+AAAAfAAAADgAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAcAAAAPwAAAP8AAAD/AAAA/wAAAP
@@ -23,12 +24,15 @@ d30fAAAAAPHXd33Xd3d913d9HwAAAADx13d913d3fdd3fR8AAAAA8R3d0dd3d30d3dEfAAAAAA8R
 EREdd3fRERER8AAAAAAA////Ed3dEf///wAAAAAAAAAAAPERER8AAAAAAAAAAAAAAAAP///wAAAA
 AAAAUEECICABAAD/////+A4DgA==
 </rawitemdata></item>
+<item name='$LaunchXPageRunOnServer' sign='true'><text>0</text></item>
+<item name='$AllowRESTDbAPI' sign='true'><number>2</number></item>
+<item name='$DefaultXPage' sign='true'><text>page.xsp</text></item>
+<item name='$Flags'><text>J!7</text></item>
+<item name='$PIRCRefreshModTime'><datetime dst='true'>20160411T142548,49+02</datetime></item>
+<item name='$TemplateModTime'><datetime dst='true'>20160411T142503,77+02</datetime></item>
+<item name='$TemplateServerName'><text>CN=Runar Brastad/O=TINE</text></item>
+<item name='$TemplateFileName'><text>CN=DEV10/O=DEV!!solidum\templates\solidumHenvendelseProxy.ntf</text></item>
 <item name='$Daos'><text>0</text></item>
-<item name='$DefaultXPage'><text>page.xsp</text></item>
-<item name='$Flags'><text>J!</text></item>
-<item name='$LaunchXPageRunOnServer'><text>0</text></item>
-<item name='$FlagsNoRefresh'><text>rv</text></item>
-<item name='$AllowRESTDbAPI'><number>2</number></item>
-<item name='$TITLE'><text>BS Application Template for XPages
+<item name='$TITLE'><text>Solidum Proxy API DEV
 </text></item></note>
 

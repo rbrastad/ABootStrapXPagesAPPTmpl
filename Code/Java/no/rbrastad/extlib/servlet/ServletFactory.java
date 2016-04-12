@@ -1,10 +1,7 @@
 package no.rbrastad.extlib.servlet;
 
-import no.rbrastad.extlib.servlet.fileupload.AttachmentServlet;
 import no.rbrastad.extlib.servlet.service.ServletFactoryService;
-import no.rbrastad.personas.CompanyServlet;
-import no.rbrastad.personas.PersonServlet;
-import no.rbrastad.whoami.WhoAmIServlet;
+import no.tine.solidum.proxy.ProxyHenvendelseServlet;
 
 import com.ibm.designer.runtime.domino.adapter.ComponentModule;
 
@@ -12,7 +9,7 @@ import com.ibm.designer.runtime.domino.adapter.ComponentModule;
 	 
 	   public void init (ComponentModule module) { 
 //		   REST Service path
-		   setPathService("/xsp/service");
+		   setPathService("/xsp/api");
 		   
 		   initService(module);
 		   
@@ -24,10 +21,8 @@ import com.ibm.designer.runtime.domino.adapter.ComponentModule;
 	    * Servlets map setup path and servlet class.
 	    */
 	   private void setupServletServicePaths(){
-		   servletMap.put("/whoami", WhoAmIServlet.class);
-		   servletMap.put("/person", PersonServlet.class);  
-		   servletMap.put("/company", CompanyServlet.class);  
-		   servletMap.put("/attachment", AttachmentServlet.class); 
+		   servletMap.put("/henvendelse", ProxyHenvendelseServlet.class);
+		  
 	   }
 
 }

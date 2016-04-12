@@ -8,6 +8,10 @@ public class FileMeta {
 	    private String fileSize;
 	    private String fileType;
 	    private String storeLocation;
+	    
+	    private String fieldName;
+	    private String fieldValue;
+	    
  
 	    private InputStream content;
 
@@ -49,6 +53,22 @@ public class FileMeta {
 
 		public String getStoreLocation() {
 			return storeLocation;
+		}
+
+		public String getFieldName() {
+			return fieldName;
+		}
+
+		public void setFieldName(String fieldName) {
+			this.fieldName = fieldName;
+		}
+
+		public String getFieldValue() {
+			return fieldValue;
+		}
+
+		public void setFieldValue(String fieldValue) {
+			this.fieldValue = fieldValue;
 		}
 	 
 }

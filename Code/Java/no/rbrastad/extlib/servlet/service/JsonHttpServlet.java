@@ -41,6 +41,19 @@ public class JsonHttpServlet extends HttpServlet{
 	}
 	
 
+	public void doResponseWriteJson(String json){
+		try {
+			PrintWriter out = res.getWriter ();
+			out.print( json );			
+			out.close ();
+			
+			res.setStatus(HttpServletResponse.SC_ACCEPTED);
+		} catch (IOException e) {
+			e.printStackTrace();
+		} 
+	}
+	
+	
 	public void doResponseStatus(int httpStatus ){
 		res.setStatus( httpStatus ); 
 	}
